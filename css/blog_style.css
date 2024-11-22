@@ -1,0 +1,71 @@
+body{
+  background-color: bisque;
+  font-size: 16px;
+  font-family: 'arial','Apple SD Gothic Neo', 'NanumGothic', sans-serif;
+  font-weight: bold;
+  color: blueviolet;
+}
+header{
+  width: 1240px;
+  margin: 0 auto 50px;
+}
+header nav ul{
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  background-color: aquamarine;
+  padding:12px 0 10px;
+  li{
+    margin: 0 20px;
+    a{
+      font-size: 20px;
+      font-weight: bold;
+      color: darkgreen;
+    }
+    a:hover{
+      text-decoration: underline double;
+    }
+
+  }
+}
+
+h1{
+  text-align: center;
+  padding: 20px 0 16px;
+}
+
+main{
+  flex-basis: 920px;
+  background-color: burlywood;
+  h2{
+    text-align: center;
+  }
+  img{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+aside{
+  flex-basis: 284px;
+  img{
+    width:300px;
+    height: 400px;
+  }
+  h2{
+    margin-bottom: 5px;
+  }
+  nav ul li{
+    margin-bottom: 5px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+div{
+  width: 1240px;
+  margin:0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
