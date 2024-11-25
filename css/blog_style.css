@@ -38,7 +38,20 @@ h1{
 main{
   flex-basis: 920px;
   background-color: burlywood;
+  border-radius: 16px;
+  padding: 62px 72px 32px 72px;
+  box-shadow: 0 0 8px;
+  rgba(0,0,0,0.16);
+  time{
+    background-color: skyblue;
+    border-radius: 0 22px 22px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222222;
+    display: inline-block;
+  }
   h2{
+    font-size: 40px;
     text-align: center;
   }
   img{
@@ -46,6 +59,9 @@ main{
     width: 500px;
     margin: 0 auto;
   }
+}
+.for_margin{
+  margin-bottom: 20px;
 }
 aside{
   flex-basis: 284px;
@@ -63,9 +79,31 @@ aside{
     text-decoration: underline;
   }
 }
+aside nav{
+  border-radius: 16px;
+  background-color: #cccccc;
+  box-shadow: 0 0 8px rgba(0,0,0,0.16);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+aside img{
+  border-radius: 15px;
+  background-color: black;
+
+}
+.categoryNav ul li{
+  height:18px;
+  overflow: hidden scroll;
+}
 div{
   width: 1240px;
   margin:0 auto 50px;
   display: flex;
   justify-content: space-between;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 14px 10px 20px;
 }
