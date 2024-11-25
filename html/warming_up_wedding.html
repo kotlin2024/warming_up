@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/wedding.css">
+  <title> 반응형 웹 사이트 <웹 초대장 사이트></title>
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="../img/flower.jpg" alt="header 사진">
+    </h1>
+    <nav>
+      <ul>
+        <li> <a href="#messageArea"> HOME </a> </li>
+        <li> <a href="#dateArea"> Date </a> </li>
+        <li> <a href="#fromArea"> Form </a> </li>
+      </ul>
+    </nav>
+    <p> Scroll<br> <img src="../img/bar.png" alt="bar"></p>
+  </header>
+
+  <main>
+    <section id = "messageArea">
+      <h2> Message </h2>
+      <p>
+        해당 사이트는 HTML과 CSS를 연습하기 위한 목적이며 <br>
+        반응형 웹사이트를 만드는것이 목표입니다. <br>
+      </p>
+      <p>
+        기본적인 양식은 웨딩 초대장 사이트 형식이며<br>
+        페이지 하단 폼을 통해 반응형 기능을 구현하고자 함<br>
+      </p>
+      <p> <img src="../img/autumn-7438675_1280.jpg" alt="이미지"></p>
+    </section>
+    <section id="dateArea">
+      <h2> 프로젝트 시작 날짜 </h2>
+      <p> <img src="../img/frames-6616615_1280.jpg" alt=""></p>
+      <p>
+        2024.11.25 MON<br>
+        Start 13:30~
+      </p>
+      <section>
+        <h3> Access </h3>
+        <p>
+          인근 카페 <br>
+          010-1234-5678
+        </p>
+      </section>
+    </section>
+    <section id="fromArea">
+      <h2> RSVP</h2>
+      <form action="" method="">
+        <p><label>
+          <input type="radio" name="attend" value="참석" checked="checked">
+          참석
+        </label>
+          <label>
+            <input type="radio" name="attend" value="불참">
+            불참
+          </label>
+        </p>
+        <p><label>
+          Name: <input type="text" name="user_name">
+        </label></p>
+        <p><label>
+          E-mail: <input type="email" name="user_email">
+        </label>
+          </p>
+        <p>좋아하는 커피:
+          <label>
+          <input type="checkbox" name="coffee" value="Americano"> Americano
+          </label>
+          <label>
+            <input type="checkbox" name="coffee" value="Latte">
+            Latte
+          </label>
+          <label>
+            <input type="checkbox" name="coffee" value="Espresso">
+            Espresso
+          </label>
+          <label>
+            <input type="checkbox" name="coffee" value="Mocha">
+            Mocha
+          </label>
+        </p>
+        <p>
+          <label>
+            MBTI:
+            <select name="MBTI">
+              <option value="ISTJ"> ISTJ</option>
+              <option value="ISFJ"> ISFJ</option>
+              <option value="INFJ"> INFJ</option>
+              <option value="INTJ"> INTJ</option>
+              <option value="ISTP"> ISTP</option>
+              <option value="ISFP"> ISFP</option>
+              <option value="INFP"> INFP</option>
+              <option value="INTP"> INTP</option>
+              <option value="ESTP"> ESTP</option>
+              <option value="ESFP"> ESFP</option>
+              <option value="ENFP"> ENFP</option>
+              <option value="ENTP"> ENTP</option>
+              <option value="ESTJ"> ESTJ</option>
+              <option value="ESFJ"> ESFJ</option>
+              <option value="ENFJ"> ENFJ</option>
+              <option value="ENTJ"> ENTJ</option>
+            </select>
+          </label>
+        </p>
+        <p><label>
+          Message:
+          <textarea name="message"> </textarea>
+        </label></p>
+        <p><input type="submit" value="Send"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p> <small> ⓒ made by HJP </small> </p>
+  </footer>
+</body>
+</html>
