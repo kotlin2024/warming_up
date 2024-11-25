@@ -2,30 +2,34 @@
 <html lang="kr">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="../css/reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/wedding.css">
+  <link href="../css/wedding.css" rel="stylesheet">
   <title> 반응형 웹 사이트 <웹 초대장 사이트></title>
 </head>
 <body>
-  <header>
+<header>
+  <div class="innerWrap">
     <h1>
-      <img src="../img/flower.jpg" alt="header 사진">
+      <img alt="header 사진" src="../img/welcome-7401530_640.png">
     </h1>
     <nav>
       <ul>
-        <li> <a href="#messageArea"> HOME </a> </li>
-        <li> <a href="#dateArea"> Date </a> </li>
-        <li> <a href="#fromArea"> Form </a> </li>
+        <li><a href="#messageArea"> HOME </a></li>
+        <li><a href="#dateArea"> Date </a></li>
+        <li><a href="#fromArea"> Form </a></li>
       </ul>
     </nav>
-    <p> Scroll<br> <img src="../img/bar.png" alt="bar"></p>
-  </header>
+    <p class="scroll"> Scroll<br>
+      <img alt="bar" src="../img/bar.png"></p>
+  </div>
+</header>
 
-  <main>
-    <section id = "messageArea">
+<main>
+  <section id="messageArea">
+    <div class="innerWrap">
       <h2> Message </h2>
       <p>
         해당 사이트는 HTML과 CSS를 연습하기 위한 목적이며 <br>
@@ -35,56 +39,65 @@
         기본적인 양식은 웨딩 초대장 사이트 형식이며<br>
         페이지 하단 폼을 통해 반응형 기능을 구현하고자 함<br>
       </p>
-      <p> <img src="../img/autumn-7438675_1280.jpg" alt="이미지"></p>
-    </section>
-    <section id="dateArea">
+      <p><img alt="이미지" src="../img/autumn-7438675_1280.jpg"></p>
+    </div>
+  </section>
+  <section id="dateArea">
+    <div class="innerWrap">
       <h2> 프로젝트 시작 날짜 </h2>
-      <p> <img src="../img/frames-6616615_1280.jpg" alt=""></p>
-      <p>
-        2024.11.25 MON<br>
-        Start 13:30~
-      </p>
-      <section>
-        <h3> Access </h3>
-        <p>
-          인근 카페 <br>
-          010-1234-5678
-        </p>
-      </section>
-    </section>
-    <section id="fromArea">
+      <div class="layoutWrap">
+        <p><img alt="" src="../img/frames-6616615_1280.jpg"></p>
+        <div class = "access">
+          <p class="date">
+            2024.11.25 <span class="mon">MON</span> <br>
+            Start <span class="time">13:30</span> <br>
+            End <span class="time"> 18:10 </span>
+          </p>
+          <section>
+            <h3> Access </h3>
+            <p>
+              인근 카페 <br>
+              010-1234-5678
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="fromArea">
+    <div class="innerWrap">
       <h2> RSVP</h2>
       <form action="" method="">
-        <p><label>
-          <input type="radio" name="attend" value="참석" checked="checked">
+        <p class="attendRadio"><label>
+          <input checked="checked" name="attend" type="radio" value="참석">
           참석
         </label>
           <label>
-            <input type="radio" name="attend" value="불참">
+            <input name="attend" type="radio" value="불참">
             불참
           </label>
         </p>
         <p><label>
-          Name: <input type="text" name="user_name">
+          Name: <input name="user_name" type="text">
         </label></p>
         <p><label>
-          E-mail: <input type="email" name="user_email">
+          E-mail: <input name="user_email" type="email">
         </label>
-          </p>
+        </p>
         <p>좋아하는 커피:
           <label>
-          <input type="checkbox" name="coffee" value="Americano"> Americano
+            <input name="coffee" type="checkbox" value="Americano"> Americano
           </label>
           <label>
-            <input type="checkbox" name="coffee" value="Latte">
+            <input name="coffee" type="checkbox" value="Latte">
             Latte
           </label>
           <label>
-            <input type="checkbox" name="coffee" value="Espresso">
+            <input name="coffee" type="checkbox" value="Espresso">
             Espresso
           </label>
           <label>
-            <input type="checkbox" name="coffee" value="Mocha">
+            <input name="coffee" type="checkbox" value="Mocha">
             Mocha
           </label>
         </p>
@@ -115,12 +128,13 @@
           Message:
           <textarea name="message"> </textarea>
         </label></p>
-        <p><input type="submit" value="Send"></p>
+        <p class="submitP"><input type="submit" value="Send"></p>
       </form>
-    </section>
-  </main>
-  <footer>
-    <p> <small> ⓒ made by HJP </small> </p>
-  </footer>
+    </div>
+  </section>
+</main>
+<footer>
+  <p><small> ⓒ made by HJP </small></p>
+</footer>
 </body>
 </html>
