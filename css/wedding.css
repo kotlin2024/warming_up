@@ -189,6 +189,15 @@ input[type="submit"]{
   background-color: black;
   color: white;
   padding: 18px 80px;
+
+}
+input[type="submit"]:hover{
+  background-color: #c7887f;
+  margin-left: 20px;
+  transition-property: background-color,margin-left;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0ms;
 }
 .submitP{
   text-align: center;
